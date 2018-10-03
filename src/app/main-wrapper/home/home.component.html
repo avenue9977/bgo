@@ -1,0 +1,18 @@
+<div class="cars" *ngIf="cars.length > 0">
+  <mat-card class="card" *ngFor="let car of cars">
+      <mat-card-header>
+        <mat-card-title>{{ car.title }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="car.image" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>{{ car.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-flat-button color="primary" (click)="onRemoveCard(car.id)">ACCEPT</button>
+        <button mat-flat-button color="warn" (click)="onRemoveCard(car.id)">CANCEL</button>
+      </mat-card-actions>
+    </mat-card>
+</div>
+<div class="info-text" *ngIf="cars.length <= 0">
+  <p>No cards to show...</p>
+</div>

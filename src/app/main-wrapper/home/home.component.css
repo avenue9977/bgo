@@ -1,0 +1,23 @@
+.cars {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  flex: 40%;
+  max-width: 40%;
+}
+
+mat-card-title {
+  font-size: 1rem;
+}
+
+.info-text {
+  text-align: center;
+}
+
+button {
+  margin: 0.25rem;
+}
+

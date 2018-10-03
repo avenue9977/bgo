@@ -1,0 +1,11 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="over">
+    <app-nav></app-nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+      <app-header (menuClicked)="openNav()"></app-header>
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
